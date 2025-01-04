@@ -11,21 +11,31 @@ body {
   border-radius: 10px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
-.logo {
-  max-height: 80px;
-}
+
 h1 {
   text-align: center;
-  font-size: 48px;
+  font-size: 54px;
   color: #018434;
   padding-bottom: 40px;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.logo {
+  max-height: 80px;
+  vertical-align: middle;
+}
+.title {
+  max-width: 700px;
+  max-height: 80px;
 }
 .container {
   max-width: 1000px;
   justify-content: center;
 }
 .container-2 {
-  justify-content: center;
+  max-width: 1000px;
+  align-content: space-evenly;
+  padding-left: 90px;
 }
 button {
   padding: 20px 20px;
@@ -41,6 +51,10 @@ button:hover {
   color: #388f93;
   cursor: pointer;
   transition: all 200ms linear;
+}
+dialog {
+  max-width: 500px;
+  border-radius: 10px;
 }
 
 h3 {
