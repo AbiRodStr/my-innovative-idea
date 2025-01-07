@@ -1,11 +1,12 @@
-const dialog = document.querySelector("dialog");
-const showButton = document.querySelector("dialog + button#empowering");
-const closeButton = document.querySelector("dialog button");
+const dialogs = document.querySelectorAll("dialog");
+const showButtons = document.querySelectorAll("dialog + button");
 
-showButton.addEventListener("click", () => {
-  dialog.showModal();
-});
-
-closeButton.addEventListener("click", () => {
-  dialog.close();
-});
+for (let i = 0; i < dialogs.length; i++) {
+  showButtons[i].addEventListener("click", () => {
+    dialogs[i].showModal();
+    let closeButton = dialogs[i].querySelector("button");
+    closeButton.addEventListener("click", () => {
+      dialogs[i].close();
+    });
+  });
+}
