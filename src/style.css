@@ -55,6 +55,18 @@ button:hover {
 dialog {
   max-width: 500px;
   border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+p {
+  font-size: 14px;
+  text-align: center;
+}
+.result {
+  font-size: 18px;
+  text-align: center;
+  color: #018434;
+  font-weight: bolder;
 }
 
 h3 {
